@@ -2,40 +2,23 @@
 <html lang="bg">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Балкан – Професионално почистване | Варна</title>
   <meta name="description" content="Балкан – професионално почистване в гр. Варна. Абонаментно, еднократно, следремонтно почистване и пране на мека мебел. #дасичистачевечемодерно" />
-  <link rel="canonical" href="https://your-domain-or-github-pages-url/" />
-  <!-- Open Graph / Social -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Балкан – Професионално почистване | Варна" />
-  <meta property="og:description" content="Балкан – професионално почистване в гр. Варна. Абонаментно, еднократно, следремонтно почистване и пране на мека мебел." />
-  <meta property="og:url" content="https://your-domain-or-github-pages-url/" />
-  <meta property="og:image" content="https://your-domain-or-github-pages-url/og-image.jpg" />
-  <meta name="theme-color" content="#c81010" />
-
-  <!-- Favicon (replace with your file) -->
-  <link rel="icon" href="/favicon.ico" />
-
-  <!-- Google Fonts: Inter -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-
   <style>
     :root{--primary:#c81010;--dark:#222;--muted:#666;--card:#fff;--glass:rgba(0,0,0,0.04)}
     *{box-sizing:border-box}
-    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:var(--dark); background:#f7f7f8; -webkit-font-smoothing:antialiased}
-    a {color:inherit}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:var(--dark); background:#f7f7f8}
     header{background:linear-gradient(90deg,#fff 60%, rgba(200,16,16,0.03)); padding:28px 20px; display:flex; align-items:center; justify-content:space-between; gap:16px; position:sticky; top:0; z-index:1000}
     .logo{display:flex; align-items:center; gap:16px}
-    .logo img{height:68px; border-radius:8px}
+    .logo img{height:68px}
     nav{display:flex; gap:12px; align-items:center}
     nav a{color:var(--dark); text-decoration:none; font-weight:600}
     .hero{display:grid; grid-template-columns:1fr 420px; gap:24px; align-items:center; padding:38px 20px}
     .hero h1{font-size:44px; margin:0 0 12px; color:var(--primary)}
-    .hero p{margin:0 0 18px; color:var(--muted); line-height:1.5}
-    .cta-row{display:flex; gap:12px; flex-wrap:wrap}
-    .btn{background:var(--primary); color:#fff; padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:700; transition: 0.2s; display:inline-block}
+    .hero p{margin:0 0 18px; color:var(--muted)}
+    .cta-row{display:flex; gap:12px}
+    .btn{background:var(--primary); color:#fff; padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:700; transition: 0.2s}
     .btn:hover{transform:translateY(-2px); box-shadow:0 4px 12px rgba(200,16,16,0.3)}
     .btn.alt{background:#fff; color:var(--primary); border:2px solid var(--primary)}
     .card{background:var(--card); padding:18px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.06)}
@@ -44,24 +27,21 @@
     .service:hover{transform:translateY(-4px); box-shadow:0 6px 20px rgba(0,0,0,0.1)}
     .service h3{margin:8px 0 6px}
     .two-col{display:grid; grid-template-columns:1fr 1fr; gap:18px}
-    .contact-form input,.contact-form textarea, .contact-form select{width:100%; padding:10px; border-radius:8px; border:1px solid #e6e6e6; margin-bottom:10px; font-size:14px}
-    footer{padding:18px 20px; color:var(--muted); font-size:14px; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap}
-    .skip-link {position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden}
-    .skip-link:focus {left:10px; top:10px; width:auto; height:auto; padding:8px 12px; background:#000; color:#fff; z-index:10000; border-radius:6px}
-    @media(max-width:900px){.hero{grid-template-columns:1fr; text-align:center}.services{grid-template-columns:repeat(1,1fr)} .two-col{grid-template-columns:1fr} .logo img{height:56px}}
+    .contact-form input,.contact-form textarea, .contact-form select{width:100%; padding:10px; border-radius:8px; border:1px solid #e6e6e6; margin-bottom:10px}
+    footer{padding:18px 20px; color:var(--muted); font-size:14px; display:flex; justify-content:space-between; align-items:center}
+    @media(max-width:900px){.hero{grid-template-columns:1fr; text-align:center}.services{grid-template-columns:repeat(1,1fr)} .two-col{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Прескочи към съдържанието</a>
-  <header role="banner">
+  <header>
     <div class="logo">
-      <img src="logo.jpg" alt="Балкан - лого" loading="lazy" />
+      <img src="logo.jpg" alt="Балкан - лого" />
       <div>
         <div style="font-weight:800; font-size:18px">Балкан</div>
         <div style="font-size:13px; color:var(--muted)">Професионално почистване — гр. Варна</div>
       </div>
     </div>
-    <nav role="navigation" aria-label="Основна навигация">
+    <nav>
       <a href="#uslugi">Услуги</a>
       <a href="#ceni">Цени</a>
       <a href="#besplaten-ogled">Безплатен оглед</a>
@@ -69,44 +49,35 @@
     </nav>
   </header>
 
-  <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
+  <main>
+    <section class="hero">
       <div>
-        <h1 id="hero-title">Бързо. Чисто. Професионално.</h1>
+        <h1>Бързо. Чисто. Професионално.</h1>
         <p>Балкан предлага цялостни решения за почистване в гр. Варна — домове, офиси, строителни обекти. Работим с професионална техника и екологични препарати. <strong>#дасичистачевечемодерно</strong></p>
         <div class="cta-row">
           <a class="btn" href="#kontakt">Запази почистване</a>
           <a class="btn alt" href="#uslugi">Виж услуги</a>
         </div>
       </div>
-      <aside class="card" aria-labelledby="quick-offer">
-        <h3 id="quick-offer">Бърза оферта</h3>
-        <form id="quickForm" class="contact-form" aria-label="Форма за бърза оферта" method="post" action="#">
-          <label class="visually-hidden" for="name">Име</label>
-          <input id="name" type="text" name="name" placeholder="Име" required aria-required="true" />
-          <label class="visually-hidden" for="phone">Телефон</label>
-          <input id="phone" type="tel" name="phone" placeholder="Телефон" pattern="^[0-9 +()-]{6,}$" required aria-required="true" />
-          <label class="visually-hidden" for="service">Услуга</label>
-          <select id="service" name="service" required>
+      <aside class="card">
+        <h3>Бърза оферта</h3>
+        <form id="quickForm" class="contact-form">
+          <input type="text" name="name" placeholder="Име" required />
+          <input type="tel" name="phone" placeholder="Телефон" required />
+          <select name="service">
             <option value="" disabled selected>Изберете услуга</option>
             <option>Еднократно почистване</option>
             <option>Абонаментно почистване</option>
             <option>Следремонтно почистване</option>
             <option>Пране на мека мебел</option>
           </select>
-
-          <!-- Honeypot за спам (скрито поле) -->
-          <div style="display:none">
-            <label>Do not fill<input name="hp" tabindex="-1" autocomplete="off" /></label>
-          </div>
-
           <button class="btn" type="submit">Изпрати заявка</button>
         </form>
         <p style="font-size:13px; color:var(--muted); margin-top:10px">Свързваме се в рамките на работния ден.</p>
       </aside>
     </section>
 
-    <section id="uslugi" class="services" aria-label="Услуги">
+    <section id="uslugi" class="services">
       <div class="service">
         <h3>Абонаментно почистване</h3>
         <p>Цена: 30 лв./час. Идеално решение за офиси, домове и бизнес обекти с редовна поддръжка.</p>
@@ -121,17 +92,10 @@
       </div>
     </section>
 
-    <section id="besplaten-ogled" class="card" style="margin:20px" aria-labelledby="ogled-title">
-      <h2 id="ogled-title">Безплатен оглед</h2>
+    <section id="besplaten-ogled" class="card" style="margin:20px">
+      <h2>Безплатен оглед</h2>
       <p>Предлагаме безплатен оглед преди извършване на услугата, за да оценим нуждите и да предложим най-добра цена.</p>
       <a class="btn" href="tel:+359890522954">Обади се за безплатен оглед</a>
-    </section>
-
-    <!-- Контакти: добави id="kontakt" ако искаш -->
-    <section id="kontakt" class="card" style="margin:20px" aria-labelledby="kontakt-title">
-      <h2 id="kontakt-title">Контакти</h2>
-      <p>Тел: <a href="tel:+359890522954">0890 522 954</a><br>Имейл: <a href="mailto:officebalkan@mail.bg">officebalkan@mail.bg</a></p>
-      <p style="color:var(--muted)">Адрес: гр. Варна (замести с точен адрес за по-добро локално SEO)</p>
     </section>
 
   </main>
@@ -141,60 +105,12 @@
     <div>Тел: <a href="tel:+359890522954">0890 522 954</a> | Имейл: <a href="mailto:officebalkan@mail.bg">officebalkan@mail.bg</a></div>
   </footer>
 
-  <!-- Structured data (JSON-LD) - попълни адреса и координатите -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"Балкан - Професионално почистване",
-    "telephone":"+359890522954",
-    "email":"officebalkan@mail.bg",
-    "address":{
-      "@type":"PostalAddress",
-      "addressLocality":"Варна",
-      "streetAddress":"(замени с точен адрес)"
-    },
-    "url":"https://your-domain-or-github-pages-url/",
-    "logo":"https://your-domain-or-github-pages-url/logo.jpg",
-    "priceRange":"BGN",
-    "image":"https://your-domain-or-github-pages-url/og-image.jpg"
-  }
-  </script>
-
   <script>
-    // Година в футъра
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Пример: изпращане на формата към сървър (replace '/api/contact' с реален endpoint или интеграция - Formspree/Getform/Netlify Forms)
-    document.getElementById('quickForm').addEventListener('submit', async function(e) {
+    document.getElementById('quickForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      const form = e.target;
-      // Honeypot check
-      if (form.hp && form.hp.value) return;
-      const data = {
-        name: form.name.value.trim(),
-        phone: form.phone.value.trim(),
-        service: form.service.value
-      };
-      try {
-        // TODO: замени URL с истински endpoint (например: https://formspree.io/f/your-id)
-        const endpoint = '/api/contact';
-        const res = await fetch(endpoint, {
-          method: 'POST',
-          headers: {'Content-Type':'application/json'},
-          body: JSON.stringify(data)
-        });
-        if (res.ok) {
-          alert('Вашата заявка е изпратена! Очаквайте обаждане.');
-          form.reset();
-        } else {
-          // fallback message
-          alert('Заявката не беше изпратена автоматично. Моля, свържете се на тел. 0890 522 954.');
-        }
-      } catch (err) {
-        console.error(err);
-        alert('Заявката не беше изпратена автоматично. Моля, свържете се на тел. 0890 522 954.');
-      }
+      alert('Вашата заявка е изпратена! Очаквайте обаждане.');
+      this.reset();
     });
   </script>
 </body>
