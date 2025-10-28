@@ -14,7 +14,7 @@
   <meta property="og:image" content="https://Veselusha93.github.io/Balkan/logo.jpg" />
   <meta name="theme-color" content="#c81010" />
 
-  <!-- Favicon (replace if you have one) -->
+  <!-- Favicon (replace with your file) -->
   <link rel="icon" href="/favicon.ico" />
 
   <!-- Google Fonts: Inter -->
@@ -22,44 +22,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    :root{
-      --primary:#c81010;
-      --dark:#222;
-      --muted:#666;
-      --card:#fff;
-      --glass:rgba(0,0,0,0.04)
-    }
+    :root{--primary:#c81010;--dark:#222;--muted:#666;--card:#fff;--glass:rgba(0,0,0,0.04)}
     *{box-sizing:border-box}
     body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:var(--dark); background:#f7f7f8; -webkit-font-smoothing:antialiased}
-    a{color:inherit}
-    /* Header styles (improved) */
-    header{
-      background:#fff;
-      padding:18px 20px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      border-bottom:1px solid #eee;
-      position:sticky;
-      top:0;
-      z-index:1000;
-    }
-    .logo{display:flex; align-items:center; gap:12px}
-    .logo img{height:64px; width:auto; display:block; border-radius:6px}
-    .brand{display:flex; flex-direction:column; line-height:1}
-    .brand .title{font-weight:800; font-size:20px; color:var(--primary); margin-bottom:2px}
-    .brand .tagline{font-size:13px; color:var(--muted)}
+    a {color:inherit}
+    header{background:linear-gradient(90deg,#fff 60%, rgba(200,16,16,0.03)); padding:28px 20px; display:flex; align-items:center; justify-content:space-between; gap:16px; position:sticky; top:0; z-index:1000}
+    .logo{display:flex; align-items:center; gap:16px}
+    .logo img{height:68px; border-radius:8px}
     nav{display:flex; gap:12px; align-items:center}
-    nav a{color:var(--dark); text-decoration:none; font-weight:600; padding:8px 10px; border-radius:8px}
-    nav a:hover{background:rgba(200,16,16,0.06); color:var(--primary)}
-
+    nav a{color:var(--dark); text-decoration:none; font-weight:600}
     .hero{display:grid; grid-template-columns:1fr 420px; gap:24px; align-items:center; padding:38px 20px}
     .hero h1{font-size:44px; margin:0 0 12px; color:var(--primary)}
     .hero p{margin:0 0 18px; color:var(--muted); line-height:1.5}
     .cta-row{display:flex; gap:12px; flex-wrap:wrap}
-    .btn{background:var(--primary); color:#fff; padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:700; transition: 0.18s; display:inline-block}
-    .btn:hover{transform:translateY(-2px); box-shadow:0 6px 18px rgba(200,16,16,0.18)}
+    .btn{background:var(--primary); color:#fff; padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:700; transition: 0.2s; display:inline-block}
+    .btn:hover{transform:translateY(-2px); box-shadow:0 4px 12px rgba(200,16,16,0.3)}
     .btn.alt{background:#fff; color:var(--primary); border:2px solid var(--primary)}
     .card{background:var(--card); padding:18px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.06)}
     .services{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; padding:20px}
@@ -71,32 +48,21 @@
     footer{padding:18px 20px; color:var(--muted); font-size:14px; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap}
     .skip-link {position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden}
     .skip-link:focus {left:10px; top:10px; width:auto; height:auto; padding:8px 12px; background:#000; color:#fff; z-index:10000; border-radius:6px}
-    @media(max-width:900px){
-      header{flex-direction:column; align-items:center; gap:10px}
-      nav{flex-wrap:wrap; justify-content:center}
-      .logo img{height:56px}
-      .hero{grid-template-columns:1fr; text-align:center}
-      .services{grid-template-columns:repeat(1,1fr)}
-      .two-col{grid-template-columns:1fr}
-    }
+    @media(max-width:900px){.hero{grid-template-columns:1fr; text-align:center}.services{grid-template-columns:repeat(1,1fr)} .two-col{grid-template-columns:1fr} .logo img{height:56px}}
     .price {font-weight:700; color:var(--primary)}
     .note {color:var(--muted); font-size:13px}
   </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Прескочи към съдържанието</a>
-
   <header role="banner">
-    <div class="logo" aria-hidden="false">
-      <a href="/" aria-label="Начало">
-        <img src="logo.jpg" alt="Балкан - лого" loading="lazy" />
-      </a>
-      <div class="brand" aria-hidden="true">
-        <div class="title">Балкан</div>
-        <div class="tagline">Професионално почистване — гр. Варна</div>
+    <div class="logo">
+      <img src="logo.jpg" alt="Балкан - лого" loading="lazy" />
+      <div>
+        <div style="font-weight:800; font-size:18px">Балкан</div>
+        <div style="font-size:13px; color:var(--muted)">Професионално почистване — гр. Варна</div>
       </div>
     </div>
-
     <nav role="navigation" aria-label="Основна навигация">
       <a href="#uslugi">Услуги</a>
       <a href="#ceni">Цени</a>
@@ -115,7 +81,6 @@
           <a class="btn alt" href="#uslugi">Виж услуги</a>
         </div>
       </div>
-
       <aside class="card" aria-labelledby="quick-offer">
         <h3 id="quick-offer">Бърза оферта</h3>
         <form id="quickForm" class="contact-form" aria-label="Форма за бърза оферта" method="post" action="#">
@@ -132,7 +97,7 @@
             <option>Пране на мека мебел</option>
           </select>
 
-          <!-- Honeypot за спам -->
+          <!-- Honeypot за спам (скрито поле) -->
           <div style="display:none">
             <label>Do not fill<input name="hp" tabindex="-1" autocomplete="off" /></label>
           </div>
@@ -228,7 +193,7 @@
     <div>Тел: <a href="tel:+359890522954">0890 522 954</a> | Имейл: <a href="mailto:officebalkan@mail.bg">officebalkan@mail.bg</a></div>
   </footer>
 
-  <!-- Structured data (JSON-LD) -->
+  <!-- Structured data (JSON-LD) - попълни адреса и координатите -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -252,7 +217,7 @@
     // Година в футъра
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Обработка на формата (пример) - заместете endpoint с реален (Formspree/Getform/Netlify)
+    // Обработка на формата (оставена като пример; замени endpoint с реален)
     document.getElementById('quickForm').addEventListener('submit', async function(e) {
       e.preventDefault();
       const form = e.target;
@@ -263,7 +228,7 @@
         service: form.service.value
       };
       try {
-        const endpoint = '/api/contact'; // <<--- ЗАМЕНИ със своя endpoint
+        const endpoint = '/api/contact'; // замени с Formspree/Getform или собствен endpoint
         const res = await fetch(endpoint, {
           method: 'POST',
           headers: {'Content-Type':'application/json'},
