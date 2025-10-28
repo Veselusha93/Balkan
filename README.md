@@ -1,216 +1,284 @@
 <!doctype html>
 <html lang="bg">
 <head>
-  <!-- Основни настройки -->
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- SEO -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Балкан – Професионално почистване | Варна</title>
-  <meta name="description" content="Професионално почистване във Варна. Почистване след ремонт, машинно почистване, пране на мека мебел и абонаментно почистване. Безплатен оглед и гарантирано качество!" />
-  <meta name="keywords" content="почистване Варна, професионално почистване, след ремонт, машинно почистване, пране на дивани, Балкан Варна" />
-  <meta name="author" content="Балкан Професионално почистване - Варна" />
-
-  <!-- Open Graph -->
+  <meta name="description" content="Балкан – професионално почистване в гр. Варна. Абонаментно, еднократно, следремонтно почистване и пране на мека мебел. #дасичистачевечемодерно" />
+  <link rel="canonical" href="https://Veselusha93.github.io/Balkan/" />
+  <!-- Open Graph / Social -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Балкан – Професионално почистване | Варна" />
-  <meta property="og:description" content="Почистване след ремонт, машинно почистване на подове, пране на мека мебел. Безплатен оглед в рамките на Варна." />
-  <meta property="og:image" content="https://balkan-cleaning.bg/logo.jpg" />
-  <meta property="og:url" content="https://balkan-cleaning.bg/" />
+  <meta property="og:description" content="Балкан – професионално почистване в гр. Варна. Абонаментно, еднократно, следремонтно почистване и пране на мека мебел." />
+  <meta property="og:url" content="https://Veselusha93.github.io/Balkan/" />
+  <meta property="og:image" content="https://Veselusha93.github.io/Balkan/logo.jpg" />
+  <meta name="theme-color" content="#c81010" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Балкан – Професионално почистване | Варна" />
-  <meta name="twitter:description" content="Професионално почистване и пране на мека мебел във Варна. Безплатен оглед!" />
-  <meta name="twitter:image" content="https://balkan-cleaning.bg/logo.jpg" />
+  <!-- Favicon (replace if you have one) -->
+  <link rel="icon" href="/favicon.ico" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png" />
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Стилове -->
   <style>
-    :root {
+    :root{
       --primary:#c81010;
       --dark:#222;
       --muted:#666;
       --card:#fff;
-      --bg:#f7f7f8;
+      --glass:rgba(0,0,0,0.04)
     }
-    *{margin:0; padding:0; box-sizing:border-box;}
-    body{
-      font-family:Inter, system-ui, "Segoe UI", Roboto, Arial;
-      background:var(--bg);
-      color:var(--dark);
-      line-height:1.6;
-    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:var(--dark); background:#f7f7f8; -webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    /* Header styles (improved) */
     header{
       background:#fff;
-      padding:24px 20px;
+      padding:18px 20px;
       display:flex;
-      justify-content:space-between;
       align-items:center;
-      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+      justify-content:space-between;
+      gap:16px;
+      border-bottom:1px solid #eee;
       position:sticky;
       top:0;
-      z-index:999;
+      z-index:1000;
     }
-    .logo{display:flex; align-items:center; gap:12px;}
-    .logo img{height:60px;}
-    nav a{
-      margin-left:18px;
-      text-decoration:none;
-      color:var(--dark);
-      font-weight:600;
-      transition:.2s;
-    }
-    nav a:hover{color:var(--primary);}
-    .hero{
-      padding:60px 20px;
-      display:grid;
-      grid-template-columns:1fr 400px;
-      gap:40px;
-      align-items:center;
-    }
-    .hero h1{font-size:42px; color:var(--primary); margin-bottom:12px;}
-    .hero p{color:var(--muted); margin-bottom:18px;}
-    .btn{
-      display:inline-block;
-      background:var(--primary);
-      color:#fff;
-      padding:12px 20px;
-      border-radius:10px;
-      text-decoration:none;
-      font-weight:700;
-      transition:.2s;
-    }
-    .btn:hover{background:#a70d0d;}
-    .btn.alt{background:#fff; color:var(--primary); border:2px solid var(--primary);}
-    .services{
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
-      gap:20px;
-      padding:20px;
-    }
-    .service{
-      background:var(--card);
-      border-radius:12px;
-      padding:18px;
-      box-shadow:0 6px 18px rgba(0,0,0,0.06);
-      transition:.2s;
-    }
-    .service:hover{transform:translateY(-3px);}
-    .service h3{margin-bottom:6px; color:var(--primary);}
-    footer{
-      background:#fff;
-      padding:18px 20px;
-      font-size:14px;
-      color:var(--muted);
-      display:flex;
-      justify-content:space-between;
-      flex-wrap:wrap;
-      border-top:1px solid #eee;
-    }
-    footer a{color:var(--primary); text-decoration:none;}
+    .logo{display:flex; align-items:center; gap:12px}
+    .logo img{height:64px; width:auto; display:block; border-radius:6px}
+    .brand{display:flex; flex-direction:column; line-height:1}
+    .brand .title{font-weight:800; font-size:20px; color:var(--primary); margin-bottom:2px}
+    .brand .tagline{font-size:13px; color:var(--muted)}
+    nav{display:flex; gap:12px; align-items:center}
+    nav a{color:var(--dark); text-decoration:none; font-weight:600; padding:8px 10px; border-radius:8px}
+    nav a:hover{background:rgba(200,16,16,0.06); color:var(--primary)}
+
+    .hero{display:grid; grid-template-columns:1fr 420px; gap:24px; align-items:center; padding:38px 20px}
+    .hero h1{font-size:44px; margin:0 0 12px; color:var(--primary)}
+    .hero p{margin:0 0 18px; color:var(--muted); line-height:1.5}
+    .cta-row{display:flex; gap:12px; flex-wrap:wrap}
+    .btn{background:var(--primary); color:#fff; padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:700; transition: 0.18s; display:inline-block}
+    .btn:hover{transform:translateY(-2px); box-shadow:0 6px 18px rgba(200,16,16,0.18)}
+    .btn.alt{background:#fff; color:var(--primary); border:2px solid var(--primary)}
+    .card{background:var(--card); padding:18px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.06)}
+    .services{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; padding:20px}
+    .service{background:var(--card); padding:18px; border-radius:12px; transition:0.2s}
+    .service:hover{transform:translateY(-4px); box-shadow:0 6px 20px rgba(0,0,0,0.1)}
+    .service h3{margin:8px 0 6px}
+    .two-col{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+    .contact-form input,.contact-form textarea, .contact-form select{width:100%; padding:10px; border-radius:8px; border:1px solid #e6e6e6; margin-bottom:10px; font-size:14px}
+    footer{padding:18px 20px; color:var(--muted); font-size:14px; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap}
+    .skip-link {position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden}
+    .skip-link:focus {left:10px; top:10px; width:auto; height:auto; padding:8px 12px; background:#000; color:#fff; z-index:10000; border-radius:6px}
     @media(max-width:900px){
-      .hero{grid-template-columns:1fr; text-align:center;}
+      header{flex-direction:column; align-items:center; gap:10px}
+      nav{flex-wrap:wrap; justify-content:center}
+      .logo img{height:56px}
+      .hero{grid-template-columns:1fr; text-align:center}
+      .services{grid-template-columns:repeat(1,1fr)}
+      .two-col{grid-template-columns:1fr}
     }
+    .price {font-weight:700; color:var(--primary)}
+    .note {color:var(--muted); font-size:13px}
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="logo.jpg" alt="Балкан Почистване Варна - Лого" />
-      <div>
-        <strong style="font-size:18px;">Балкан</strong><br>
-        <span style="font-size:13px; color:var(--muted)">Професионално почистване | Варна</span>
+  <a class="skip-link" href="#main">Прескочи към съдържанието</a>
+
+  <header role="banner">
+    <div class="logo" aria-hidden="false">
+      <a href="/" aria-label="Начало">
+        <img src="logo.jpg" alt="Балкан - лого" loading="lazy" />
+      </a>
+      <div class="brand" aria-hidden="true">
+        <div class="title">Балкан</div>
+        <div class="tagline">Професионално почистване — гр. Варна</div>
       </div>
     </div>
-    <nav aria-label="Основна навигация">
+
+    <nav role="navigation" aria-label="Основна навигация">
       <a href="#uslugi">Услуги</a>
+      <a href="#ceni">Цени</a>
       <a href="#besplaten-ogled">Безплатен оглед</a>
       <a href="#kontakt">Контакти</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
       <div>
-        <h1>Професионално почистване във Варна</h1>
-        <p>Почистване след ремонт, машинно почистване на подове и пране на мека мебел. Надеждно обслужване и безплатен оглед на място.</p>
-        <a href="#kontakt" class="btn">Заяви почистване</a>
-        <a href="#uslugi" class="btn alt">Разгледай услуги</a>
+        <h1 id="hero-title">Бързо. Чисто. Професионално.</h1>
+        <p>Балкан предлага цялостни решения за почистване в гр. Варна — домове, офиси, строителни обекти. Работим с професионална техника и екологични препарати. <strong>#дасичистачевечемодерно</strong></p>
+        <div class="cta-row">
+          <a class="btn" href="#kontakt">Запази почистване</a>
+          <a class="btn alt" href="#uslugi">Виж услуги</a>
+        </div>
       </div>
-      <div class="card" style="background:#fff; padding:18px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.05);">
-        <h3>Бърза заявка</h3>
-        <form id="quickForm">
-          <input type="text" name="name" placeholder="Име" required style="width:100%; padding:10px; margin:6px 0; border-radius:8px; border:1px solid #ddd;">
-          <input type="tel" name="phone" placeholder="Телефон" required style="width:100%; padding:10px; margin:6px 0; border-radius:8px; border:1px solid #ddd;">
-          <select name="service" required style="width:100%; padding:10px; margin:6px 0; border-radius:8px; border:1px solid #ddd;">
+
+      <aside class="card" aria-labelledby="quick-offer">
+        <h3 id="quick-offer">Бърза оферта</h3>
+        <form id="quickForm" class="contact-form" aria-label="Форма за бърза оферта" method="post" action="#">
+          <label class="visually-hidden" for="name">Име</label>
+          <input id="name" type="text" name="name" placeholder="Име" required aria-required="true" />
+          <label class="visually-hidden" for="phone">Телефон</label>
+          <input id="phone" type="tel" name="phone" placeholder="Телефон" pattern="^[0-9 +()-]{6,}$" required aria-required="true" />
+          <label class="visually-hidden" for="service">Услуга</label>
+          <select id="service" name="service" required>
             <option value="" disabled selected>Изберете услуга</option>
-            <option>Почистване след ремонт</option>
-            <option>Машинно почистване на под</option>
+            <option>Еднократно почистване</option>
+            <option>Абонаментно почистване</option>
+            <option>Следремонтно почистване</option>
             <option>Пране на мека мебел</option>
-            <option>Почистване при нанасяне / изнасяне</option>
           </select>
-          <button class="btn" type="submit" style="width:100%;">Изпрати</button>
+
+          <!-- Honeypot за спам -->
+          <div style="display:none">
+            <label>Do not fill<input name="hp" tabindex="-1" autocomplete="off" /></label>
+          </div>
+
+          <button class="btn" type="submit">Изпрати заявка</button>
         </form>
-      </div>
+        <p class="note" style="margin-top:10px">Свързваме се в рамките на работния ден.</p>
+      </aside>
     </section>
 
-    <section id="uslugi" class="services">
+    <!-- Услуги / Цени -->
+    <section id="uslugi" class="services" aria-label="Услуги и цени">
+      <div class="service">
+        <h3>Абонаментно почистване</h3>
+        <p class="price">30 лв./час</p>
+        <p>Идеално решение за офиси, домове и бизнес обекти с редовна поддръжка.</p>
+      </div>
+
+      <div class="service">
+        <h3>Почистване на прозорци</h3>
+        <p>Стандартни прозорци: 5–8 лв./бр.<br>Френски прозорци / врати: 8–15 лв./бр.<br>Комарници: 2–5 лв./бр.<br>Щори вътрешни: 5–10 лв./бр.<br>Минимална такса за посещение: 60 лв.<br>Офиси / Търговски обекти: 4–8 лв./кв.м.<br>При високо замърсяване: +25%.</p>
+      </div>
+
       <div class="service">
         <h3>Почистване след ремонт</h3>
-        <p>Цена: 6 лв./кв.м.<br>При силно замърсяване: +50%<br>При много силно замърсяване: +75%</p>
+        <p class="price">6 лв./кв.м.</p>
+        <p>При силно замърсяване: +50%<br>При много силно замърсяване: +75%</p>
       </div>
+
       <div class="service">
         <h3>Машинно почистване на под</h3>
-        <p>Цена: 3 лв./кв.м.<br>При силно замърсяване: +50%<br>При много силно замърсяване: +75%</p>
+        <p class="price">3 лв./кв.м.</p>
+        <p>При силно замърсяване: +50%<br>При много силно замърсяване: +75%</p>
       </div>
+
       <div class="service">
-        <h3>Почистване при нанасяне или изнасяне</h3>
+        <h3>Почистване при нанасяне / изнасяне</h3>
         <p>Цена по договаряне.</p>
       </div>
+
       <div class="service">
         <h3>Почистване на вакантни жилища</h3>
         <p>Цена по договаряне.</p>
       </div>
+
       <div class="service">
         <h3>Почистване на офиси и бизнес сгради</h3>
         <p>Цена по договаряне.</p>
       </div>
+
       <div class="service">
         <h3>Пране на мека мебел</h3>
-        <p>
-          Единичен матрак (едностранно): 20 лв.<br>
-          Единичен матрак (двустранно): 40 лв.<br>
-          Двоен матрак (едностранно): 40 лв.<br>
-          Двоен матрак (двустранно): 70 лв.<br>
-          Стол: 15 лв.<br>
-          Диван (на седящо място): 12 лв.<br>
-          Табуретка: 10 лв.<br>
-          Фотьойл: 30 лв.
-        </p>
+        <p>Нови, актуализирани цени (виж детайли по-долу):</p>
       </div>
     </section>
 
-    <section id="besplaten-ogled" style="padding:20px; text-align:center;">
-      <h2>Безплатен оглед</h2>
-      <p>Наш екип ще извърши безплатен оглед и ще ви даде точна оферта спрямо състоянието на обекта.</p>
-      <a href="tel:+359890522954" class="btn">Обади се за оглед</a>
+    <!-- По-подробни цени за пране на мека мебел -->
+    <section id="ceni" class="card" style="margin:20px" aria-labelledby="ceni-title">
+      <h2 id="ceni-title">Пране на мека мебел — цени</h2>
+      <div class="two-col">
+        <div>
+          <p><strong>Единичен матрак (едностранно):</strong> 20 лв.</p>
+          <p><strong>Единичен матрак (двустранно):</strong> 40 лв.</p>
+          <p><strong>Двоен матрак (едностранно):</strong> 40 лв.</p>
+          <p><strong>Двоен матрак (двустранно):</strong> 70 лв.</p>
+        </div>
+        <div>
+          <p><strong>Стол:</strong> 15 лв.</p>
+          <p><strong>Диван (на седящо място):</strong> 12 лв.</p>
+          <p><strong>Табуретка:</strong> 10 лв.</p>
+          <p><strong>Фотьойл:</strong> 30 лв.</p>
+        </div>
+      </div>
+      <p class="note" style="margin-top:12px">За големи обеми или силно/много силно замърсяване оферти се дават след оглед. Цените са ориентировъчни и подлежат на потвърждение при заявка.</p>
     </section>
+
+    <section id="besplaten-ogled" class="card" style="margin:20px" aria-labelledby="ogled-title">
+      <h2 id="ogled-title">Безплатен оглед</h2>
+      <p>Предлагаме безплатен оглед преди извършване на услугата, за да оценим нуждите и да предложим най-добра цена.</p>
+      <a class="btn" href="tel:+359890522954">Обади се за безплатен оглед</a>
+    </section>
+
+    <section id="kontakt" class="card" style="margin:20px" aria-labelledby="kontakt-title">
+      <h2 id="kontakt-title">Контакти</h2>
+      <p>Тел: <a href="tel:+359890522954">0890 522 954</a><br>Имейл: <a href="mailto:officebalkan@mail.bg">officebalkan@mail.bg</a></p>
+      <p class="note">Адрес: гр. Варна (замести с точен адрес за по-добро локално SEO)</p>
+    </section>
+
   </main>
 
-  <footer id="kontakt">
-    <div>© <span id="year"></span> Балкан – Професионално почистване, Варна</div>
+  <footer>
+    <div>© <span id="year"></span> Балкан – Професионално почистване, Варна | <strong>#дасичистачевечемодерно</strong></div>
     <div>Тел: <a href="tel:+359890522954">0890 522 954</a> | Имейл: <a href="mailto:officebalkan@mail.bg">officebalkan@mail.bg</a></div>
   </footer>
 
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Балкан - Професионално почистване",
+    "telephone":"+359890522954",
+    "email":"officebalkan@mail.bg",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Варна",
+      "streetAddress":"(замени с точен адрес)"
+    },
+    "url":"https://Veselusha93.github.io/Balkan/",
+    "logo":"https://Veselusha93.github.io/Balkan/logo.jpg",
+    "priceRange":"BGN",
+    "image":"https://Veselusha93.github.io/Balkan/logo.jpg"
+  }
+  </script>
+
   <script>
+    // Година в футъра
     document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('quickForm').addEventListener('submit', e => {
+
+    // Обработка на формата (пример) - заместете endpoint с реален (Formspree/Getform/Netlify)
+    document.getElementById('quickForm').addEventListener('submit', async function(e) {
       e.preventDefault();
-      alert('Благодарим! Вашата заявка е получена. Ще се свържем с вас скоро.');
-      e.target.reset();
+      const form = e.target;
+      if (form.hp && form.hp.value) return;
+      const data = {
+        name: form.name.value.trim(),
+        phone: form.phone.value.trim(),
+        service: form.service.value
+      };
+      try {
+        const endpoint = '/api/contact'; // <<--- ЗАМЕНИ със своя endpoint
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: {'Content-Type':'application/json'},
+          body: JSON.stringify(data)
+        });
+        if (res.ok) {
+          alert('Вашата заявка е изпратена! Очаквайте обаждане.');
+          form.reset();
+        } else {
+          alert('Заявката не беше изпратена автоматично. Моля, свържете се на тел. 0890 522 954.');
+        }
+      } catch (err) {
+        console.error(err);
+        alert('Заявката не беше изпратена автоматично. Моля, свържете се на тел. 0890 522 954.');
+      }
     });
   </script>
 </body>
